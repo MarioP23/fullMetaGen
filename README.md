@@ -24,30 +24,6 @@ Para instalar Anaconda o Miniconda en Linux son necesarios los siguientes pasos:
 
 `conda update conda`
 
-## Qiime2
-
-En este [link](https://docs.qiime2.org/2022.2/install/native/) se explica cómo se realiza la instalación nativa de Qiime2 mediante la terminal de comandos de Linux. 
-
-1. Descargar el archivo .yml para crear el entorno virtual
-
-`wget https://data.qiime2.org/distro/core/qiime2-2022.2-py38-linux-conda.yml`
-
-2. Crear el entorno virtual
-
-`conda env create -n qiime2-2022.2 --file qiime2-2022.2-py38-linux-conda.yml`
-
-3. *Cleanup* opcional
-
-`rm qiime2-2022.2-py38-linux-conda.yml`
-
-4. Activar el entorno de Qiime2
-
-`conda activate qiime2-2022.2`
-
-5. Testear la instalación
-
-`qiime --help`
-
 ## MetaPhlAn3
 
 Para la instalación de MetaPhlAn3 hay dos opciones, o bien realizar la instalación manualmente o mediante el script `install_metaphlan.sh`. Para la instalación manual son necesarios los siguientes pasos:
@@ -69,6 +45,14 @@ Para la instalación de MetaPhlAn3 hay dos opciones, o bien realizar la instalac
 4. Instalar metaphlan
 
 `conda install -c bioconda metaphlan`
+
+## Krona
+
+1. Instalar el paquete a través de Anaconda
+
+`conda install -c bioconda krona`
+
+## SPAdes
 
 # Ejecución del análisis
 
